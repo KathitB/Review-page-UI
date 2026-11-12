@@ -1,0 +1,56 @@
+.loaderMain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(201, 201, 201, 0.445);
+  // opacity: 0.5;
+
+  .loader {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.292);
+  }
+}
+
+.loader {
+  width: 4px;
+  height: 24px;
+  -webkit-mask:
+    conic-gradient(from 135deg at top, #0000, #000 0.5deg 90deg, #0000 90.5deg)
+      0 0,
+    conic-gradient(
+        from -45deg at bottom,
+        #0000,
+        #000 0.5deg 90deg,
+        #0000 90.5deg
+      )
+      0 100%;
+  -webkit-mask-size: 25% 50%;
+  -webkit-mask-repeat: repeat-x;
+  background: linear-gradient(
+      90deg,
+      #215988 0%,
+      #215988 33%,
+      #215988 66%,
+      #215988 100%
+    )
+    left/0% 100% no-repeat #ddd;
+  animation: l13 1.5s infinite linear;
+}
+
+@keyframes l13 {
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+// #215988 0%,
+// #3473ba 33%,
+// #ed4c28 66%,
+// #f79c37 100%

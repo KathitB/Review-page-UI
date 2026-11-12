@@ -1,0 +1,133 @@
+.page {
+  // --primary: #1f4d7a;
+  // --accent: #ff6b2c;
+  // --text-dark: #0f1115;
+  // // --card-shadow: 0 24px 55px rgba(8, 17, 33, 0.45);
+
+  height: 100vh;
+  display: flex;
+  background: #f2f2f2;
+  color: #f6f7fb;
+  overflow: hidden;
+  justify-content: center;
+  padding-top: 4%;
+  @media (max-width: 1300px) {
+    padding-top: 6%;
+  }
+  @media (max-height: 700px) {
+    padding-top: 5% !important;
+  }
+  @media (max-width: 1000px) {
+    padding-top: 6%;
+    overflow: auto;
+    height: 100% !important;
+  }
+  @media (max-width: 890px) {
+    padding-top: 10%;
+    height: 100% !important;
+  }
+}
+.mainContainer {
+  width: 90%;
+}
+
+.topBar {
+  height: 64px;
+  background: linear-gradient(90deg, #1a4f83 0%, #1e6ab2 100%);
+  border-radius: 0 0 14px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f04e2a;
+  display: grid;
+  place-items: center;
+}
+
+.brandIcon img {
+  width: 18px;
+  height: 18px;
+}
+
+.brandText {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.userSection {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userBadge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+}
+
+.userBadge img {
+  width: 22px;
+  height: 22px;
+}
+
+.userMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.userRole {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.logoutButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  color: #e04e2a;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.logoutButton img {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 680px) {
+  .page {
+    // padding: 0 16px 24px;
+    padding-top: 10%;
+  }
+  .mainContainer {
+    width: 95%;
+  }
+
+  .userName {
+    display: none;
+  }
+}

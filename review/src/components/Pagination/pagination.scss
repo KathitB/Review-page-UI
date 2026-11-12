@@ -1,0 +1,125 @@
+.paginationMain {
+  width: 100%;
+  // background-color: red;
+  padding: 10px 25px;
+  @media screen and (max-width: 1400px) {
+    // background-color: red;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .sectionNum {
+    display: flex;
+    justify-content: space-between;
+    .bookingEntriesContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        font-size: 12px;
+        @media screen and (min-width: 1850px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 1400px) {
+          font-size: 10px;
+        }
+      }
+      select {
+        width: 25px;
+        height: 25px;
+        appearance: none;
+        padding: 4px;
+        background: transparent;
+        outline: none;
+        font-size: 12px;
+
+        option {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @media screen and (min-width: 1850px) {
+          width: 30px;
+          height: 30px;
+          font-size: 14px;
+        }
+        @media screen and (max-width: 1400px) {
+          width: 22px;
+          height: 22px;
+          font-size: 10px;
+        }
+      }
+    }
+    .pagnation {
+      display: flex;
+      gap: 10px;
+      * {
+        user-select: none;
+        cursor: pointer;
+      }
+      .nextprev {
+        // padding: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+        line-height: 0;
+        font-weight: 500;
+        color: white;
+        border: none;
+        outline: none;
+        background-color: #215988;
+        border-radius: 3px;
+        @media screen and (max-width: 1400px) {
+          width: 22px;
+          height: 22px;
+          font-size: 15px;
+        }
+      }
+      .pageno {
+        // width: 25px;
+        padding: 0px 10px 0 10px;
+        height: 25px;
+        border-radius: 3px;
+        font-weight: 500;
+        @media screen and (max-width: 1400px) {
+          // width: 22px;
+          // width: fit-content;
+
+          height: 22px;
+          font-size: 12px;
+        }
+      }
+      .disableLastPage,
+      .disableFirstPage {
+        background-color: gray;
+        cursor: not-allowed;
+      }
+    }
+    .bookingGoToPageContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        @media screen and (min-width: 1850px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 1400px) {
+          font-size: 10px;
+        }
+      }
+      input {
+        width: 25px;
+        height: 25px;
+        padding: 2px;
+        text-align: center;
+        @media screen and (max-width: 1400px) {
+          width: 22px;
+          height: 22px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.calendarCard {
+  background: #f6f7f9;
+  border: 1px solid #e7ebf0;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.topRow h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #1f4d7a;
+}
+
+.controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrowButton {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #d9e0e9;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #3f4d61;
+  cursor: pointer;
+  font-size: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.modeSwitch {
+  background: #ffffff;
+  border: 1px solid #d9e0e9;
+  border-radius: 8px;
+  padding: 2px;
+  display: inline-flex;
+  gap: 2px;
+}
+
+.modeButton {
+  border: none;
+  background: transparent;
+  color: #617185;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.modeButtonActive {
+  background: #1f76d2;
+  color: #ffffff;
+}
+
+.itemsRow {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scroll-behavior: smooth;
+}
+
+.itemsRow::-webkit-scrollbar {
+  height: 6px;
+}
+
+.itemsRow::-webkit-scrollbar-thumb {
+  background: #c8d3e0;
+  border-radius: 10px;
+}
+
+.itemCard {
+  flex: 0 0 52px;
+  min-width: 52px;
+  border: none;
+  background: #eceff3;
+  border-radius: 8px;
+  padding: 8px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.itemCardActive {
+  background: #ff7a32;
+}
+
+.itemLabel {
+  font-size: 22px;
+  font-weight: 700;
+  color: #273248;
+  line-height: 1;
+}
+
+.itemSubLabel {
+  font-size: 11px;
+  color: #8b95a3;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.itemDivider {
+  margin-top: 6px;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: #d0d8e2;
+}
+
+.itemCardActive .itemLabel,
+.itemCardActive .itemSubLabel {
+  color: #ffffff;
+}
+
+.itemCardActive .itemDivider {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 900px) {
+  .topRow {
+    flex-wrap: wrap;
+  }
+
+  .topRow h3 {
+    font-size: 16px;
+  }
+
+  .itemCard {
+    flex: 0 0 58px;
+    min-width: 58px;
+  }
+
+  .itemLabel {
+    font-size: 18px;
+  }
+}

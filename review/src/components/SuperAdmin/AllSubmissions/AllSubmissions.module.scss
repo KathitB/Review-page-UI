@@ -1,0 +1,217 @@
+.page {
+  height: 100vh;
+  display: flex;
+  background: #f2f2f2;
+  color: #1f2a44;
+  overflow: hidden;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+.mainContainer {
+  width: 90%;
+}
+
+// .card {
+//   background: #ffffff;
+//   border-radius: 12px;
+//   padding: 18px;
+//   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+// }
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  height: calc(100% - 100px);
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.titleBlock h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #1f2a44;
+}
+
+.titleBlock p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #7a7f87;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #d7dce3;
+  border-radius: 5px;
+  padding: 8px 12px;
+  min-width: 300px;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  width: 100%;
+  color: #1f2a44;
+}
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.filterButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #c7d9f2;
+  background: #ffffff;
+  color: #1f2a44;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 160px;
+  background: #ffffff;
+  border: 1px solid #d7dce3;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.dropdownItem {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 12px;
+  color: #1f2a44;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background: #f4f9ff;
+}
+
+.dropdownIcon {
+  width: 12px;
+  height: 12px;
+}
+
+// .tableWrapper {
+//   width: 100%;
+//   overflow-x: auto;
+// }
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  min-height: 200px;
+  // height: 300px;
+  height: calc(100% - 245px);
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.table thead th {
+  text-align: left;
+  padding: 12px 12px;
+  font-size: 13px;
+  color: #1f4d7a;
+  background: #f4f9ff;
+  font-weight: 600;
+}
+
+.table tbody td {
+  padding: 14px 12px;
+  font-size: 13px;
+  color: #2b2f36;
+  border-bottom: 1px solid #cfe0f5;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ratingCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingValue {
+  color: #ff5a3d;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.actionButton {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.actionButton img {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 1000px) {
+  .page {
+    padding-top: 6%;
+    overflow: hidden;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 680px) {
+  .mainContainer {
+    width: 90%;
+  }
+
+  .searchBox {
+    width: 100%;
+  }
+  .tableWrapper {
+    height: calc(100% - 260px);
+  }
+}
+

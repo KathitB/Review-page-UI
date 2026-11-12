@@ -1,0 +1,27 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.starButton {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starButton:disabled {
+  cursor: default;
+}
+
+.starActive {
+  fill: #f4b018;
+}
+
+.starInactive {
+  fill: #d8d8d8;
+}

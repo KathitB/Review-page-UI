@@ -1,0 +1,121 @@
+.topBar {
+  height: clamp(54px, 8vh, 70px);
+  background: linear-gradient(90deg, #1a4f83 0%, #1e6ab2 100%);
+  border-radius: 0 0;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: space-between;
+  padding: 0 clamp(10px, 2.4vw, 24px);
+  gap: 10px;
+  //   width: 100vw;
+  //   margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(6px, 1.2vw, 10px);
+  }
+
+  .brandIcon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .brandText {
+    font-size: clamp(12px, 1.6vw, 15px);
+    font-weight: 600;
+  }
+
+  .userSection {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(6px, 1.6vw, 10px);
+  }
+
+  .userBadge {
+    // width: clamp(30px, 2.8vw, 32px);
+    // height: clamp(30px, 2.8vw, 32px);
+    border-radius: 50%;
+    background: #ffffff;
+    display: grid;
+    place-items: center;
+    color: #ed4c28;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px;
+  }
+
+  .userBadge img {
+    width: clamp(18px, 2.4vw, 22px);
+    height: clamp(18px, 2.4vw, 22px);
+  }
+
+  .userName {
+    font-size: clamp(11px, 1.4vw, 13px);
+    font-weight: 500;
+  }
+
+  // .logoutButton {
+  //   border-radius: 6px;
+  //   padding: 0 clamp(8px, 1.6vw, 12px);
+  //   background: #ffffff;
+  //   color: #1a4f83;
+  // }
+
+  .logout {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background-color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    @media (max-width: 700px) {
+      padding: 5px !important;
+    }
+
+    .logouticon {
+      height: 16px;
+      width: 20px;
+    }
+
+    .logouttext {
+      color: #ed4c28;
+      font-size: 14px;
+      font-weight: 600;
+      @media (max-width: 700px) {
+        display: none !important;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .topBar {
+    justify-content: space-between;
+    // flex-direction: column;
+    // height: auto;
+    padding: 10px 12px;
+  }
+
+  .userSection {
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+  .userBadge {
+    font-size: 14px !important;
+    padding: 5px !important;
+  }
+
+  .userName {
+    display: none;
+  }
+}
